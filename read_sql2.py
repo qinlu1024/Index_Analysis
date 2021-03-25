@@ -35,7 +35,7 @@ s_color_rank = s_color_tmp.rank(method='dense', ascending=False)
 df_color_tmp = pd.DataFrame([s_color_tmp, s_color_rank])
 # df_color_tmp['v_rank'] = df_color_tmp
 # print(df_color_tmp)
-df_color_tmp.to_excel('D:\\test111.xls', sheet_name='Sheet1', na_rep=0, float_format="%.2f")
+df_color_tmp.to_excel('D:\\test111.xls', sheet_name='Sheet1', na_rep='0', float_format="%.2f")
 # ---------------------------------------! GO GO GO !------------------------------------------------------------------
 sql_lr = "SELECT T.STAT_DT, T.OP_ORG_NUM,T.TYPE, T.NBR, T.NAME, T.INDIC_VAL " \
          "FROM v_LR_detail T " \
